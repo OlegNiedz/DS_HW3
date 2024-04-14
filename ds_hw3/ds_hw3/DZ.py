@@ -99,10 +99,14 @@ def main():
 
     if db_connection:
         quotes_collection = db_connection.DS03.quotes
+        with open("quotes.json", encoding="utf-8") as f:
+            quotes = json.load(f)
         quotes_collection.drop()
         quotes_collection.insert_many(quotes)
 
         authors_collection = db_connection.DS03.authors
+        with open("authors.json", encoding="utf-8") as f:
+            authors = json.load(f)
         authors_collection.drop()
         authors_collection.insert_many(authors)
 
