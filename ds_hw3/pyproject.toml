@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ds-hw3"
+version = "0.1.0"
+description = ""
+authors = ["OlegNiedz <oleg.niedz@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.3"
+scrapy = "^2.11.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
